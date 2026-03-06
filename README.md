@@ -36,10 +36,6 @@ Start the application:
 npm start
 ```
 
-Open your browser and go to `http://localhost:3000` to see the app in action.
-
-## License
-This project is licensed under the MIT License.
 ```
 
 Would you like me to customize it further or add specific details?
