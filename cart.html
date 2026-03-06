@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 modern add to cart · demo</title>
+    <!-- Font Awesome 6 (free) for cart icon & friends -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div>
+            <h1>
+                <i class="fas fa-cart-shopping"></i> add to cart
+            </h1>
+            <div class="subhead">fresh · functional · interactive demo</div>
+        </div>
+
+        <!-- hidden toast for add confirmation -->
+        <div id="liveToast" class="feedback-toast hidden"><i class="fa-regular fa-circle-check"></i> <span
+                id="toastMessage">item added</span></div>
+
+        <!-- PRODUCT SECTION -->
+        <div class="product-grid" id="productGrid">
+            <!-- product 1 -->
+            <div class="product-item" data-id="p1" data-name="Wireless Headphones" data-price="79.99"
+                data-icon="fa-headphones">
+                <span class="product-badge"><i class="fa-regular fa-star"></i> bestseller</span>
+                <div class="product-icon"><i class="fas fa-headphones"></i></div>
+                <div class="product-title">Wireless Headphones</div>
+                <div class="product-desc">Noise cancelling, 40h battery · deep bass</div>
+                <div class="price-row">
+                    <span class="price"><small>$</small>79.99</span>
+                    <button class="add-btn" data-add="p1"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <!-- product 2 -->
+            <div class="product-item" data-id="p2" data-name="Mechanical Keyboard" data-price="129.99"
+                data-icon="fa-keyboard">
+                <span class="product-badge"><i class="fa-regular fa-clock"></i> hot</span>
+                <div class="product-icon"><i class="fas fa-keyboard"></i></div>
+                <div class="product-title">Mechanical Keyboard</div>
+                <div class="product-desc">RGB hot-swap, blue switches · compact</div>
+                <div class="price-row">
+                    <span class="price"><small>$</small>129.99</span>
+                    <button class="add-btn" data-add="p2"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <!-- product 3 -->
+            <div class="product-item" data-id="p3" data-name="Smart Watch" data-price="199.50" data-icon="fa-clock">
+                <span class="product-badge"><i class="fa-regular fa-heart"></i> sport</span>
+                <div class="product-icon"><i class="fas fa-clock"></i></div>
+                <div class="product-title">Smart Watch</div>
+                <div class="product-desc">Fitness tracking, always‑on retina</div>
+                <div class="price-row">
+                    <span class="price"><small>$</small>199.50</span>
+                    <button class="add-btn" data-add="p3"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <!-- product 4 -->
+            <div class="product-item" data-id="p4" data-name="Portable SSD" data-price="149.90" data-icon="fa-database">
+                <span class="product-badge"><i class="fa-regular fa-gem"></i> 1TB</span>
+                <div class="product-icon"><i class="fas fa-database"></i></div>
+                <div class="product-title">Portable SSD</div>
+                <div class="product-desc">1TB, 1050MB/s, usb-c · rugged</div>
+                <div class="price-row">
+                    <span class="price"><small>$</small>149.90</span>
+                    <button class="add-btn" data-add="p4"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CART SECTION -->
+        <div class="cart-header">
+            <div class="cart-title">
+                <i class="fas fa-bag-shopping"></i> your cart
+                <span class="cart-count-badge" id="cartCount">0</span>
+            </div>
+            <div>
+                <!-- (empty slot, but clear button is on the right side) -->
+            </div>
+        </div>
+
+        <!-- cart items list (dynamic) -->
+        <ul class="cart-items-list" id="cartList">
+            <li class="empty-cart-msg"><i class="fa-regular fa-face-smile"></i> Your cart feels lonely — add something!
+            </li>
+        </ul>
+
+        <!-- cart total & actions -->
+        <div class="cart-total">
+            <span>total <i class="fa-solid fa-cart-plus" style="opacity:0.7;"></i></span>
+            <span class="total-amount" id="cartTotal">$0.00</span>
+        </div>
+
+        <div class="action-buttons">
+            <button class="clear-btn" id="clearCartBtn"><i class="fa-regular fa-trash-can"></i> clear cart</button>
+            <button class="checkout-btn" id="checkoutDummy"><i class="fa-regular fa-credit-card"></i> checkout</button>
+        </div>
+        <footer>🛍️ click <i class="fas fa-plus"></i> to add · items stay in cart</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
