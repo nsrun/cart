@@ -31,9 +31,4 @@ npm install
 ## Usage
 Start the application:
 ```bash
-npm start
-```
 
-```
-
-Would you like me to customize it further or add specific details?
