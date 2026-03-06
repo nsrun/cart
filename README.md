@@ -1,6 +1,4 @@
-Sure! Here's a simple example of a GitHub README file for a project called "Simple Cart". You can customize it further based on your project details.
 
-```markdown
 # Simple Cart
 
 A lightweight and easy-to-use shopping cart application.
